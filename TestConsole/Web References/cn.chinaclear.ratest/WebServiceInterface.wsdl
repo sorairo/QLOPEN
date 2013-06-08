@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc12="http://www.w3.org/2003/05/soap-encoding" xmlns:soapenc11="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope" xmlns:tns="http://webservice.infosec.com.cn" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap11="http://schemas.xmlsoap.org/soap/envelope/" targetNamespace="http://webservice.infosec.com.cn" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://webservice.infosec.com.cn">
+      <xsd:element name="perCertRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="perCertRequestResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="operatorCertRevoke">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="operatorCertRevokeResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="entCertReplace">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="entCertReplaceResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="operatorCertFreeze">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="operatorCertFreezeResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="entCertRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="entCertRequestResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="operatorCertUpdateAndDown">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="operatorCertUpdateAndDownResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="entCertUpdate">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="entCertUpdateResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="operatorCertRequestAndDown">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="operatorCertRequestAndDownResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="operatorCertUnfreeze">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="operatorCertUnfreezeResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="entCertFreeze">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="entCertFreezeResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="perCertUpdate">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="perCertUpdateResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="perCertUpdateAndDown">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="perCertUpdateAndDownResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="operatorCertQuery">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="operatorCertQueryResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="entCertReplaceAndDown">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="entCertReplaceAndDownResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="perCertReplace">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="perCertReplaceResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="entCertRequestAndDown">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="entCertRequestAndDownResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="perCertUnfreeze">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="perCertUnfreezeResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="operatorCertUpdate">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="operatorCertUpdateResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="perCertFreeze">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="perCertFreezeResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="perCertReplaceAndDown">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="perCertReplaceAndDownResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="operatorCertReplace">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="operatorCertReplaceResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="operatorCertReplaceAndDown">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="operatorCertReplaceAndDownResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="downloadCert">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="downloadCertResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="entCertRevoke">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="entCertRevokeResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="operatorCertRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="operatorCertRequestResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="entCertUpdateAndDown">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="entCertUpdateAndDownResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="perCertQuery">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="perCertQueryResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="entCertUnfreeze">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="entCertUnfreezeResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="perCertRequestAndDown">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="perCertRequestAndDownResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="entCertQuery">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="entCertQueryResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="perCertRevoke">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="perCertRevokeResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="perCertUpdateRequest">
+    <wsdl:part name="parameters" element="tns:perCertUpdate" />
+  </wsdl:message>
+  <wsdl:message name="entCertReplaceResponse">
+    <wsdl:part name="parameters" element="tns:entCertReplaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="perCertReplaceRequest">
+    <wsdl:part name="parameters" element="tns:perCertReplace" />
+  </wsdl:message>
+  <wsdl:message name="perCertReplaceAndDownRequest">
+    <wsdl:part name="parameters" element="tns:perCertReplaceAndDown" />
+  </wsdl:message>
+  <wsdl:message name="perCertUpdateAndDownRequest">
+    <wsdl:part name="parameters" element="tns:perCertUpdateAndDown" />
+  </wsdl:message>
+  <wsdl:message name="perCertUpdateResponse">
+    <wsdl:part name="parameters" element="tns:perCertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="operatorCertRevokeResponse">
+    <wsdl:part name="parameters" element="tns:operatorCertRevokeResponse" />
+  </wsdl:message>
+  <wsdl:message name="entCertRevokeResponse">
+    <wsdl:part name="parameters" element="tns:entCertRevokeResponse" />
+  </wsdl:message>
+  <wsdl:message name="perCertRequestRequest">
+    <wsdl:part name="parameters" element="tns:perCertRequest" />
+  </wsdl:message>
+  <wsdl:message name="entCertUpdateResponse">
+    <wsdl:part name="parameters" element="tns:entCertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="entCertFreezeRequest">
+    <wsdl:part name="parameters" element="tns:entCertFreeze" />
+  </wsdl:message>
+  <wsdl:message name="entCertRevokeRequest">
+    <wsdl:part name="parameters" element="tns:entCertRevoke" />
+  </wsdl:message>
+  <wsdl:message name="entCertUnfreezeResponse">
+    <wsdl:part name="parameters" element="tns:entCertUnfreezeResponse" />
+  </wsdl:message>
+  <wsdl:message name="operatorCertReplaceAndDownResponse">
+    <wsdl:part name="parameters" element="tns:operatorCertReplaceAndDownResponse" />
+  </wsdl:message>
+  <wsdl:message name="operatorCertRequestRequest">
+    <wsdl:part name="parameters" element="tns:operatorCertRequest" />
+  </wsdl:message>
+  <wsdl:message name="downloadCertRequest">
+    <wsdl:part name="parameters" element="tns:downloadCert" />
+  </wsdl:message>
+  <wsdl:message name="perCertQueryRequest">
+    <wsdl:part name="parameters" element="tns:perCertQuery" />
+  </wsdl:message>
+  <wsdl:message name="entCertReplaceAndDownResponse">
+    <wsdl:part name="parameters" element="tns:entCertReplaceAndDownResponse" />
+  </wsdl:message>
+  <wsdl:message name="operatorCertReplaceRequest">
+    <wsdl:part name="parameters" element="tns:operatorCertReplace" />
+  </wsdl:message>
+  <wsdl:message name="downloadCertResponse">
+    <wsdl:part name="parameters" element="tns:downloadCertResponse" />
+  </wsdl:message>
+  <wsdl:message name="operatorCertRequestResponse">
+    <wsdl:part name="parameters" element="tns:operatorCertRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="perCertUpdateAndDownResponse">
+    <wsdl:part name="parameters" element="tns:perCertUpdateAndDownResponse" />
+  </wsdl:message>
+  <wsdl:message name="entCertUpdateAndDownRequest">
+    <wsdl:part name="parameters" element="tns:entCertUpdateAndDown" />
+  </wsdl:message>
+  <wsdl:message name="operatorCertUnfreezeRequest">
+    <wsdl:part name="parameters" element="tns:operatorCertUnfreeze" />
+  </wsdl:message>
+  <wsdl:message name="operatorCertRequestAndDownResponse">
+    <wsdl:part name="parameters" element="tns:operatorCertRequestAndDownResponse" />
+  </wsdl:message>
+  <wsdl:message name="perCertRevokeResponse">
+    <wsdl:part name="parameters" element="tns:perCertRevokeResponse" />
+  </wsdl:message>
+  <wsdl:message name="entCertReplaceRequest">
+    <wsdl:part name="parameters" element="tns:entCertReplace" />
+  </wsdl:message>
+  <wsdl:message name="perCertUnfreezeResponse">
+    <wsdl:part name="parameters" element="tns:perCertUnfreezeResponse" />
+  </wsdl:message>
+  <wsdl:message name="operatorCertRevokeRequest">
+    <wsdl:part name="parameters" element="tns:operatorCertRevoke" />
+  </wsdl:message>
+  <wsdl:message name="entCertUnfreezeRequest">
+    <wsdl:part name="parameters" element="tns:entCertUnfreeze" />
+  </wsdl:message>
+  <wsdl:message name="entCertQueryResponse">
+    <wsdl:part name="parameters" element="tns:entCertQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="entCertUpdateRequest">
+    <wsdl:part name="parameters" element="tns:entCertUpdate" />
+  </wsdl:message>
+  <wsdl:message name="operatorCertUpdateAndDownRequest">
+    <wsdl:part name="parameters" element="tns:operatorCertUpdateAndDown" />
+  </wsdl:message>
+  <wsdl:message name="entCertRequestAndDownResponse">
+    <wsdl:part name="parameters" element="tns:entCertRequestAndDownResponse" />
+  </wsdl:message>
+  <wsdl:message name="entCertQueryRequest">
+    <wsdl:part name="parameters" element="tns:entCertQuery" />
+  </wsdl:message>
+  <wsdl:message name="perCertFreezeResponse">
+    <wsdl:part name="parameters" element="tns:perCertFreezeResponse" />
+  </wsdl:message>
+  <wsdl:message name="perCertFreezeRequest">
+    <wsdl:part name="parameters" element="tns:perCertFreeze" />
+  </wsdl:message>
+  <wsdl:message name="operatorCertFreezeResponse">
+    <wsdl:part name="parameters" element="tns:operatorCertFreezeResponse" />
+  </wsdl:message>
+  <wsdl:message name="perCertRequestAndDownResponse">
+    <wsdl:part name="parameters" element="tns:perCertRequestAndDownResponse" />
+  </wsdl:message>
+  <wsdl:message name="operatorCertQueryResponse">
+    <wsdl:part name="parameters" element="tns:operatorCertQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="perCertUnfreezeRequest">
+    <wsdl:part name="parameters" element="tns:perCertUnfreeze" />
+  </wsdl:message>
+  <wsdl:message name="entCertRequestResponse">
+    <wsdl:part name="parameters" element="tns:entCertRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="operatorCertQueryRequest">
+    <wsdl:part name="parameters" element="tns:operatorCertQuery" />
+  </wsdl:message>
+  <wsdl:message name="operatorCertUnfreezeResponse">
+    <wsdl:part name="parameters" element="tns:operatorCertUnfreezeResponse" />
+  </wsdl:message>
+  <wsdl:message name="operatorCertUpdateAndDownResponse">
+    <wsdl:part name="parameters" element="tns:operatorCertUpdateAndDownResponse" />
+  </wsdl:message>
+  <wsdl:message name="perCertRequestResponse">
+    <wsdl:part name="parameters" element="tns:perCertRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="operatorCertFreezeRequest">
+    <wsdl:part name="parameters" element="tns:operatorCertFreeze" />
+  </wsdl:message>
+  <wsdl:message name="entCertUpdateAndDownResponse">
+    <wsdl:part name="parameters" element="tns:entCertUpdateAndDownResponse" />
+  </wsdl:message>
+  <wsdl:message name="operatorCertRequestAndDownRequest">
+    <wsdl:part name="parameters" element="tns:operatorCertRequestAndDown" />
+  </wsdl:message>
+  <wsdl:message name="operatorCertReplaceAndDownRequest">
+    <wsdl:part name="parameters" element="tns:operatorCertReplaceAndDown" />
+  </wsdl:message>
+  <wsdl:message name="perCertRequestAndDownRequest">
+    <wsdl:part name="parameters" element="tns:perCertRequestAndDown" />
+  </wsdl:message>
+  <wsdl:message name="entCertFreezeResponse">
+    <wsdl:part name="parameters" element="tns:entCertFreezeResponse" />
+  </wsdl:message>
+  <wsdl:message name="entCertRequestAndDownRequest">
+    <wsdl:part name="parameters" element="tns:entCertRequestAndDown" />
+  </wsdl:message>
+  <wsdl:message name="operatorCertUpdateRequest">
+    <wsdl:part name="parameters" element="tns:operatorCertUpdate" />
+  </wsdl:message>
+  <wsdl:message name="entCertRequestRequest">
+    <wsdl:part name="parameters" element="tns:entCertRequest" />
+  </wsdl:message>
+  <wsdl:message name="perCertReplaceAndDownResponse">
+    <wsdl:part name="parameters" element="tns:perCertReplaceAndDownResponse" />
+  </wsdl:message>
+  <wsdl:message name="perCertReplaceResponse">
+    <wsdl:part name="parameters" element="tns:perCertReplaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="perCertRevokeRequest">
+    <wsdl:part name="parameters" element="tns:perCertRevoke" />
+  </wsdl:message>
+  <wsdl:message name="operatorCertUpdateResponse">
+    <wsdl:part name="parameters" element="tns:operatorCertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="operatorCertReplaceResponse">
+    <wsdl:part name="parameters" element="tns:operatorCertReplaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="entCertReplaceAndDownRequest">
+    <wsdl:part name="parameters" element="tns:entCertReplaceAndDown" />
+  </wsdl:message>
+  <wsdl:message name="perCertQueryResponse">
+    <wsdl:part name="parameters" element="tns:perCertQueryResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceInterfacePortType">
+    <wsdl:operation name="perCertRequest">
+      <wsdl:input name="perCertRequestRequest" message="tns:perCertRequestRequest" />
+      <wsdl:output name="perCertRequestResponse" message="tns:perCertRequestResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="operatorCertRevoke">
+      <wsdl:input name="operatorCertRevokeRequest" message="tns:operatorCertRevokeRequest" />
+      <wsdl:output name="operatorCertRevokeResponse" message="tns:operatorCertRevokeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="entCertReplace">
+      <wsdl:input name="entCertReplaceRequest" message="tns:entCertReplaceRequest" />
+      <wsdl:output name="entCertReplaceResponse" message="tns:entCertReplaceResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="operatorCertFreeze">
+      <wsdl:input name="operatorCertFreezeRequest" message="tns:operatorCertFreezeRequest" />
+      <wsdl:output name="operatorCertFreezeResponse" message="tns:operatorCertFreezeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="entCertRequest">
+      <wsdl:input name="entCertRequestRequest" message="tns:entCertRequestRequest" />
+      <wsdl:output name="entCertRequestResponse" message="tns:entCertRequestResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="operatorCertUpdateAndDown">
+      <wsdl:input name="operatorCertUpdateAndDownRequest" message="tns:operatorCertUpdateAndDownRequest" />
+      <wsdl:output name="operatorCertUpdateAndDownResponse" message="tns:operatorCertUpdateAndDownResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="entCertUpdate">
+      <wsdl:input name="entCertUpdateRequest" message="tns:entCertUpdateRequest" />
+      <wsdl:output name="entCertUpdateResponse" message="tns:entCertUpdateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="operatorCertRequestAndDown">
+      <wsdl:input name="operatorCertRequestAndDownRequest" message="tns:operatorCertRequestAndDownRequest" />
+      <wsdl:output name="operatorCertRequestAndDownResponse" message="tns:operatorCertRequestAndDownResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="operatorCertUnfreeze">
+      <wsdl:input name="operatorCertUnfreezeRequest" message="tns:operatorCertUnfreezeRequest" />
+      <wsdl:output name="operatorCertUnfreezeResponse" message="tns:operatorCertUnfreezeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="entCertFreeze">
+      <wsdl:input name="entCertFreezeRequest" message="tns:entCertFreezeRequest" />
+      <wsdl:output name="entCertFreezeResponse" message="tns:entCertFreezeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="perCertUpdate">
+      <wsdl:input name="perCertUpdateRequest" message="tns:perCertUpdateRequest" />
+      <wsdl:output name="perCertUpdateResponse" message="tns:perCertUpdateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="perCertUpdateAndDown">
+      <wsdl:input name="perCertUpdateAndDownRequest" message="tns:perCertUpdateAndDownRequest" />
+      <wsdl:output name="perCertUpdateAndDownResponse" message="tns:perCertUpdateAndDownResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="operatorCertQuery">
+      <wsdl:input name="operatorCertQueryRequest" message="tns:operatorCertQueryRequest" />
+      <wsdl:output name="operatorCertQueryResponse" message="tns:operatorCertQueryResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="entCertReplaceAndDown">
+      <wsdl:input name="entCertReplaceAndDownRequest" message="tns:entCertReplaceAndDownRequest" />
+      <wsdl:output name="entCertReplaceAndDownResponse" message="tns:entCertReplaceAndDownResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="perCertReplace">
+      <wsdl:input name="perCertReplaceRequest" message="tns:perCertReplaceRequest" />
+      <wsdl:output name="perCertReplaceResponse" message="tns:perCertReplaceResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="entCertRequestAndDown">
+      <wsdl:input name="entCertRequestAndDownRequest" message="tns:entCertRequestAndDownRequest" />
+      <wsdl:output name="entCertRequestAndDownResponse" message="tns:entCertRequestAndDownResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="perCertUnfreeze">
+      <wsdl:input name="perCertUnfreezeRequest" message="tns:perCertUnfreezeRequest" />
+      <wsdl:output name="perCertUnfreezeResponse" message="tns:perCertUnfreezeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="operatorCertUpdate">
+      <wsdl:input name="operatorCertUpdateRequest" message="tns:operatorCertUpdateRequest" />
+      <wsdl:output name="operatorCertUpdateResponse" message="tns:operatorCertUpdateResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="perCertFreeze">
+      <wsdl:input name="perCertFreezeRequest" message="tns:perCertFreezeRequest" />
+      <wsdl:output name="perCertFreezeResponse" message="tns:perCertFreezeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="perCertReplaceAndDown">
+      <wsdl:input name="perCertReplaceAndDownRequest" message="tns:perCertReplaceAndDownRequest" />
+      <wsdl:output name="perCertReplaceAndDownResponse" message="tns:perCertReplaceAndDownResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="operatorCertReplace">
+      <wsdl:input name="operatorCertReplaceRequest" message="tns:operatorCertReplaceRequest" />
+      <wsdl:output name="operatorCertReplaceResponse" message="tns:operatorCertReplaceResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="operatorCertReplaceAndDown">
+      <wsdl:input name="operatorCertReplaceAndDownRequest" message="tns:operatorCertReplaceAndDownRequest" />
+      <wsdl:output name="operatorCertReplaceAndDownResponse" message="tns:operatorCertReplaceAndDownResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="downloadCert">
+      <wsdl:input name="downloadCertRequest" message="tns:downloadCertRequest" />
+      <wsdl:output name="downloadCertResponse" message="tns:downloadCertResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="entCertRevoke">
+      <wsdl:input name="entCertRevokeRequest" message="tns:entCertRevokeRequest" />
+      <wsdl:output name="entCertRevokeResponse" message="tns:entCertRevokeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="operatorCertRequest">
+      <wsdl:input name="operatorCertRequestRequest" message="tns:operatorCertRequestRequest" />
+      <wsdl:output name="operatorCertRequestResponse" message="tns:operatorCertRequestResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="entCertUpdateAndDown">
+      <wsdl:input name="entCertUpdateAndDownRequest" message="tns:entCertUpdateAndDownRequest" />
+      <wsdl:output name="entCertUpdateAndDownResponse" message="tns:entCertUpdateAndDownResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="perCertQuery">
+      <wsdl:input name="perCertQueryRequest" message="tns:perCertQueryRequest" />
+      <wsdl:output name="perCertQueryResponse" message="tns:perCertQueryResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="entCertUnfreeze">
+      <wsdl:input name="entCertUnfreezeRequest" message="tns:entCertUnfreezeRequest" />
+      <wsdl:output name="entCertUnfreezeResponse" message="tns:entCertUnfreezeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="perCertRequestAndDown">
+      <wsdl:input name="perCertRequestAndDownRequest" message="tns:perCertRequestAndDownRequest" />
+      <wsdl:output name="perCertRequestAndDownResponse" message="tns:perCertRequestAndDownResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="entCertQuery">
+      <wsdl:input name="entCertQueryRequest" message="tns:entCertQueryRequest" />
+      <wsdl:output name="entCertQueryResponse" message="tns:entCertQueryResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="perCertRevoke">
+      <wsdl:input name="perCertRevokeRequest" message="tns:perCertRevokeRequest" />
+      <wsdl:output name="perCertRevokeResponse" message="tns:perCertRevokeResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceInterfaceHttpBinding" type="tns:WebServiceInterfacePortType">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="perCertRequest">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="perCertRequestRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="perCertRequestResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="operatorCertRevoke">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="operatorCertRevokeRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="operatorCertRevokeResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="entCertReplace">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="entCertReplaceRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="entCertReplaceResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="operatorCertFreeze">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="operatorCertFreezeRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="operatorCertFreezeResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="entCertRequest">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="entCertRequestRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="entCertRequestResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="operatorCertUpdateAndDown">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="operatorCertUpdateAndDownRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="operatorCertUpdateAndDownResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="entCertUpdate">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="entCertUpdateRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="entCertUpdateResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="operatorCertRequestAndDown">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="operatorCertRequestAndDownRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="operatorCertRequestAndDownResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="operatorCertUnfreeze">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="operatorCertUnfreezeRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="operatorCertUnfreezeResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="entCertFreeze">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="entCertFreezeRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="entCertFreezeResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="perCertUpdate">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="perCertUpdateRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="perCertUpdateResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="perCertUpdateAndDown">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="perCertUpdateAndDownRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="perCertUpdateAndDownResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="operatorCertQuery">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="operatorCertQueryRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="operatorCertQueryResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="entCertReplaceAndDown">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="entCertReplaceAndDownRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="entCertReplaceAndDownResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="perCertReplace">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="perCertReplaceRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="perCertReplaceResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="entCertRequestAndDown">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="entCertRequestAndDownRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="entCertRequestAndDownResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="perCertUnfreeze">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="perCertUnfreezeRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="perCertUnfreezeResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="operatorCertUpdate">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="operatorCertUpdateRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="operatorCertUpdateResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="perCertFreeze">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="perCertFreezeRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="perCertFreezeResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="perCertReplaceAndDown">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="perCertReplaceAndDownRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="perCertReplaceAndDownResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="operatorCertReplace">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="operatorCertReplaceRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="operatorCertReplaceResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="operatorCertReplaceAndDown">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="operatorCertReplaceAndDownRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="operatorCertReplaceAndDownResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="downloadCert">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="downloadCertRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="downloadCertResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="entCertRevoke">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="entCertRevokeRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="entCertRevokeResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="operatorCertRequest">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="operatorCertRequestRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="operatorCertRequestResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="entCertUpdateAndDown">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="entCertUpdateAndDownRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="entCertUpdateAndDownResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="perCertQuery">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="perCertQueryRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="perCertQueryResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="entCertUnfreeze">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="entCertUnfreezeRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="entCertUnfreezeResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="perCertRequestAndDown">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="perCertRequestAndDownRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="perCertRequestAndDownResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="entCertQuery">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="entCertQueryRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="entCertQueryResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="perCertRevoke">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="perCertRevokeRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="perCertRevokeResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceInterface">
+    <wsdl:port name="WebServiceInterfaceHttpPort" binding="tns:WebServiceInterfaceHttpBinding">
+      <wsdlsoap:address location="http://ratest.chinaclear.cn/RaGateway/WebServiceInterface.ws" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TestConsole.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TestConsole_cn_chinaclear_ratest_WebServiceInterface" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://ratest.chinaclear.cn/RaGateway/WebServiceInterface.ws</Value>
+    </Setting>
+    <Setting Name="TestConsole_shine_OlOpenAcctCtrlService_OlOpenAcctCtrlService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://jboss.95538.cn:8080/MbapService/ws/MbapService_OlOpenAcctCtrl</Value>
+    </Setting>
+    <Setting Name="TestConsole_shine_OlCheckCtrlService_OlCheckCtrlService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://jboss.95538.cn:8080/MbapService/ws/MbapService_OlCheckCtrl</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

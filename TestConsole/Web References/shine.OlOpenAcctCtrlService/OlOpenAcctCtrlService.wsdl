@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns="http://ctrl.client.mbap.shine.com/" xmlns:SOAP11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:SOAP="http://schemas.xmlsoap.org/wsdl/soap/" name="OlOpenAcctCtrlService" targetNamespace="http://ctrl.client.mbap.shine.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://ctrl.client.mbap.shine.com/" attributeFormDefault="qualified" elementFormDefault="unqualified" targetNamespace="http://ctrl.client.mbap.shine.com/">
+      <xs:element name="addStockHolder">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="arg0" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg1" nillable="true" type="tns:openAccountInfoDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="updateUnifyCustPwdResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="tns:olReturnMsgDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="updateUnifyCustPwd">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="arg0" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg2" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getFilePath">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="arg0" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg1" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="queryInvAccInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="arg0" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg1" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCustDemoInfo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="arg0" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg2" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg3" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg4" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="addOuterOpenAccReqDataResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="tns:olReturnMsgDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="addOuterOpenAccReqData">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="arg0" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg1" nillable="true" type="tns:openAccountInfoDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="queryAcception">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="arg0" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg1" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="addStockHolderResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="tns:olReturnMsgDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="uploadCompleteResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="tns:olReturnMsgDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="uploadComplete">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="arg0" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="arg2" nillable="true" type="tns:imageInfoDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="generateUnifyCustIdResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="tns:olReturnMsgDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="queryAcceptionResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="tns:queryResultListDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getFilePathResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="tns:olReturnMsgDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getCustDemoInfoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="tns:olReturnMsgDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="queryInvAccInfoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="tns:invAccInfoListDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getOuterReqSeqDetailResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="tns:openAccDetailInfoListDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getOuterReqSeqDetail">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="arg0" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg1" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="generateUnifyCustId">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="arg0" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg2" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg3" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="saveOuterCustPaperScoreResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="tns:olReturnMsgDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="saveOuterCustPaperScore">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="arg0" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg1" nillable="true" type="tns:riskEvaluateInfoDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="invAccInfoListDTO">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:olReturnDTO">
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="list" type="tns:invAccInfoDTO" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="olReturnDTO" abstract="true">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="msg" type="tns:olReturnMsgDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="invAccInfoDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="accInfoSeq" type="xs:string" />
+          <xs:element minOccurs="0" name="accType" type="xs:string" />
+          <xs:element minOccurs="0" name="flowId" type="xs:string" />
+          <xs:element minOccurs="0" name="invAcc" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="olReturnMsgDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="errCode" type="xs:string" />
+          <xs:element minOccurs="0" name="errMsg" type="xs:string" />
+          <xs:element minOccurs="0" name="value" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="openAccDetailInfoListDTO">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:olReturnDTO">
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="list" type="tns:openAccDetailInfoDTO" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="openAccDetailInfoDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="accType" type="xs:string" />
+          <xs:element minOccurs="0" name="busiCode" type="xs:string" />
+          <xs:element minOccurs="0" name="custCode" type="xs:string" />
+          <xs:element minOccurs="0" name="finishDate" type="xs:string" />
+          <xs:element minOccurs="0" name="fundAcc" type="xs:string" />
+          <xs:element minOccurs="0" name="invAcc" type="xs:string" />
+          <xs:element minOccurs="0" name="openAccDetailInfoSeq" type="xs:string" />
+          <xs:element minOccurs="0" name="orderNo" type="xs:string" />
+          <xs:element minOccurs="0" name="procStatus" type="xs:string" />
+          <xs:element minOccurs="0" name="signStatus" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="queryResultListDTO">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:olReturnDTO">
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="list" type="tns:queryResultDTO" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="queryResultDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="custCode" type="xs:string" />
+          <xs:element minOccurs="0" name="custName" type="xs:string" />
+          <xs:element minOccurs="0" name="dealTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="fundAcc" type="xs:string" />
+          <xs:element minOccurs="0" name="prId" type="xs:string" />
+          <xs:element minOccurs="0" name="signStatus" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:string" />
+          <xs:element minOccurs="0" name="type" type="xs:string" />
+          <xs:element minOccurs="0" name="visitFlag" type="xs:string" />
+          <xs:element minOccurs="0" name="visitPerson" type="xs:string" />
+          <xs:element minOccurs="0" name="visitTime" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="openAccountInfoDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="address" type="xs:string" />
+          <xs:element minOccurs="0" name="bankAcc" type="xs:string" />
+          <xs:element minOccurs="0" name="bankCode" type="xs:string" />
+          <xs:element minOccurs="0" name="bankPwd" type="xs:string" />
+          <xs:element minOccurs="0" name="birthday" type="xs:string" />
+          <xs:element minOccurs="0" name="certAddr" type="xs:string" />
+          <xs:element minOccurs="0" name="certAddrPost" type="xs:string" />
+          <xs:element minOccurs="0" name="certCode" type="xs:string" />
+          <xs:element minOccurs="0" name="certType" type="xs:string" />
+          <xs:element minOccurs="0" name="certValidBgn" type="xs:string" />
+          <xs:element minOccurs="0" name="certValidEnd" type="xs:string" />
+          <xs:element minOccurs="0" name="commPwd" type="xs:string" />
+          <xs:element minOccurs="0" name="contact" type="xs:string" />
+          <xs:element minOccurs="0" name="custCode" type="xs:string" />
+          <xs:element minOccurs="0" name="custName" type="xs:string" />
+          <xs:element minOccurs="0" name="custNameEn" type="xs:string" />
+          <xs:element minOccurs="0" name="custOfficeAddr" type="xs:string" />
+          <xs:element minOccurs="0" name="custProp" type="xs:string" />
+          <xs:element minOccurs="0" name="custSimpName" type="xs:string" />
+          <xs:element minOccurs="0" name="dataSource" type="xs:string" />
+          <xs:element minOccurs="0" name="eduCode" type="xs:string" />
+          <xs:element minOccurs="0" name="email" type="xs:string" />
+          <xs:element minOccurs="0" name="fax" type="xs:string" />
+          <xs:element minOccurs="0" name="fileFaceInfo" type="xs:string" />
+          <xs:element minOccurs="0" name="fileScanInfo" type="xs:string" />
+          <xs:element minOccurs="0" name="folkCode" type="xs:string" />
+          <xs:element minOccurs="0" name="fundAcc" type="xs:string" />
+          <xs:element minOccurs="0" name="fundPwd" type="xs:string" />
+          <xs:element minOccurs="0" name="haAssignFlag" type="xs:string" />
+          <xs:element minOccurs="0" name="haInvAcc" type="xs:string" />
+          <xs:element minOccurs="0" name="hbAssignFlag" type="xs:string" />
+          <xs:element minOccurs="0" name="hbInvAcc" type="xs:string" />
+          <xs:element minOccurs="0" name="homePlace" type="xs:string" />
+          <xs:element minOccurs="0" name="industryType" type="xs:string" />
+          <xs:element minOccurs="0" name="insertTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="isReadCard" type="xs:int" />
+          <xs:element minOccurs="0" name="isUseRandomCode" type="xs:string" />
+          <xs:element minOccurs="0" name="isWitnessApprove" type="xs:string" />
+          <xs:element minOccurs="0" name="issueDept" type="xs:string" />
+          <xs:element minOccurs="0" name="lastModify" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="marryCode" type="xs:int" />
+          <xs:element minOccurs="0" name="mobile" type="xs:string" />
+          <xs:element minOccurs="0" name="natCode" type="xs:string" />
+          <xs:element minOccurs="0" name="nativePlace" type="xs:string" />
+          <xs:element minOccurs="0" name="opDepId" type="xs:string" />
+          <xs:element minOccurs="0" name="opIp" type="xs:string" />
+          <xs:element minOccurs="0" name="opUserCode" type="xs:string" />
+          <xs:element minOccurs="0" name="orderNo" type="xs:string" />
+          <xs:element minOccurs="0" name="postCode" type="xs:string" />
+          <xs:element minOccurs="0" name="saInvAcc" type="xs:string" />
+          <xs:element minOccurs="0" name="saRepotFlag" type="xs:string" />
+          <xs:element minOccurs="0" name="saSeatCode" type="xs:string" />
+          <xs:element minOccurs="0" name="sbInvAcc" type="xs:string" />
+          <xs:element minOccurs="0" name="sbSeatCode" type="xs:string" />
+          <xs:element minOccurs="0" name="settleDeptCode" type="xs:string" />
+          <xs:element minOccurs="0" name="sexCode" type="xs:string" />
+          <xs:element minOccurs="0" name="shAccTypeList" type="xs:string" />
+          <xs:element minOccurs="0" name="shNetPwd" type="xs:string" />
+          <xs:element minOccurs="0" name="staInvAcc" type="xs:string" />
+          <xs:element minOccurs="0" name="status" type="xs:int" />
+          <xs:element minOccurs="0" name="stbInvAcc" type="xs:string" />
+          <xs:element minOccurs="0" name="submitType" type="xs:string" />
+          <xs:element minOccurs="0" name="szAccReg" type="xs:string" />
+          <xs:element minOccurs="0" name="szAccTypeList" type="xs:string" />
+          <xs:element minOccurs="0" name="szNetPwd" type="xs:string" />
+          <xs:element minOccurs="0" name="telphone" type="xs:string" />
+          <xs:element minOccurs="0" name="templateId" type="xs:string" />
+          <xs:element minOccurs="0" name="tradePwd" type="xs:string" />
+          <xs:element minOccurs="0" name="videoFileName" type="xs:string" />
+          <xs:element minOccurs="0" name="videoPath" type="xs:string" />
+          <xs:element minOccurs="0" name="videoReqId" type="xs:string" />
+          <xs:element minOccurs="0" name="vocCode" type="xs:string" />
+          <xs:element minOccurs="0" name="witness1" type="xs:string" />
+          <xs:element minOccurs="0" name="witness2" type="xs:string" />
+          <xs:element minOccurs="0" name="witnessApplyId" type="xs:string" />
+          <xs:element minOccurs="0" name="witnessOpinion" type="xs:string" />
+          <xs:element minOccurs="0" name="witnessType" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="imageInfoDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="fileName" type="xs:string" />
+          <xs:element minOccurs="0" name="flowId" type="xs:string" />
+          <xs:element minOccurs="0" name="path" type="xs:string" />
+          <xs:element minOccurs="0" name="prId" type="xs:long" />
+          <xs:element minOccurs="0" name="type" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="riskEvaluateInfoDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="answer" type="xs:string" />
+          <xs:element minOccurs="0" name="certCode" type="xs:string" />
+          <xs:element minOccurs="0" name="certType" type="xs:string" />
+          <xs:element minOccurs="0" name="custName" type="xs:string" />
+          <xs:element minOccurs="0" name="formId" type="xs:string" />
+          <xs:element minOccurs="0" name="grade" type="xs:string" />
+          <xs:element minOccurs="0" name="insertTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="itId" type="xs:string" />
+          <xs:element minOccurs="0" name="loginName" type="xs:string" />
+          <xs:element minOccurs="0" name="prId" type="xs:long" />
+          <xs:element minOccurs="0" name="score" type="xs:int" />
+          <xs:element minOccurs="0" name="singleFlag" type="xs:string" />
+          <xs:element minOccurs="0" name="sortCode" type="xs:string" />
+          <xs:element minOccurs="0" name="sortType" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="imageInfoDTOArray" final="#all">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="item" nillable="true" type="tns:imageInfoDTO" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="addStockHolder">
+    <wsdl:part name="addStockHolder" element="addStockHolder" />
+  </wsdl:message>
+  <wsdl:message name="updateUnifyCustPwdResponse">
+    <wsdl:part name="updateUnifyCustPwdResponse" element="updateUnifyCustPwdResponse" />
+  </wsdl:message>
+  <wsdl:message name="updateUnifyCustPwd">
+    <wsdl:part name="updateUnifyCustPwd" element="updateUnifyCustPwd" />
+  </wsdl:message>
+  <wsdl:message name="getFilePath">
+    <wsdl:part name="getFilePath" element="getFilePath" />
+  </wsdl:message>
+  <wsdl:message name="queryInvAccInfo">
+    <wsdl:part name="queryInvAccInfo" element="queryInvAccInfo" />
+  </wsdl:message>
+  <wsdl:message name="getCustDemoInfo">
+    <wsdl:part name="getCustDemoInfo" element="getCustDemoInfo" />
+  </wsdl:message>
+  <wsdl:message name="addOuterOpenAccReqDataResponse">
+    <wsdl:part name="addOuterOpenAccReqDataResponse" element="addOuterOpenAccReqDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="addOuterOpenAccReqData">
+    <wsdl:part name="addOuterOpenAccReqData" element="addOuterOpenAccReqData" />
+  </wsdl:message>
+  <wsdl:message name="queryAcception">
+    <wsdl:part name="queryAcception" element="queryAcception" />
+  </wsdl:message>
+  <wsdl:message name="addStockHolderResponse">
+    <wsdl:part name="addStockHolderResponse" element="addStockHolderResponse" />
+  </wsdl:message>
+  <wsdl:message name="uploadCompleteResponse">
+    <wsdl:part name="uploadCompleteResponse" element="uploadCompleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="uploadComplete">
+    <wsdl:part name="uploadComplete" element="uploadComplete" />
+  </wsdl:message>
+  <wsdl:message name="generateUnifyCustIdResponse">
+    <wsdl:part name="generateUnifyCustIdResponse" element="generateUnifyCustIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="queryAcceptionResponse">
+    <wsdl:part name="queryAcceptionResponse" element="queryAcceptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="getFilePathResponse">
+    <wsdl:part name="getFilePathResponse" element="getFilePathResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCustDemoInfoResponse">
+    <wsdl:part name="getCustDemoInfoResponse" element="getCustDemoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="queryInvAccInfoResponse">
+    <wsdl:part name="queryInvAccInfoResponse" element="queryInvAccInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getOuterReqSeqDetailResponse">
+    <wsdl:part name="getOuterReqSeqDetailResponse" element="getOuterReqSeqDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="getOuterReqSeqDetail">
+    <wsdl:part name="getOuterReqSeqDetail" element="getOuterReqSeqDetail" />
+  </wsdl:message>
+  <wsdl:message name="generateUnifyCustId">
+    <wsdl:part name="generateUnifyCustId" element="generateUnifyCustId" />
+  </wsdl:message>
+  <wsdl:message name="saveOuterCustPaperScoreResponse">
+    <wsdl:part name="saveOuterCustPaperScoreResponse" element="saveOuterCustPaperScoreResponse" />
+  </wsdl:message>
+  <wsdl:message name="saveOuterCustPaperScore">
+    <wsdl:part name="saveOuterCustPaperScore" element="saveOuterCustPaperScore" />
+  </wsdl:message>
+  <wsdl:portType name="OlOpenAcctCtrl">
+    <wsdl:operation name="saveOuterCustPaperScore">
+      <wsdl:input message="saveOuterCustPaperScore" />
+      <wsdl:output message="saveOuterCustPaperScoreResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="generateUnifyCustId">
+      <wsdl:input message="generateUnifyCustId" />
+      <wsdl:output message="generateUnifyCustIdResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addOuterOpenAccReqData">
+      <wsdl:input message="addOuterOpenAccReqData" />
+      <wsdl:output message="addOuterOpenAccReqDataResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="uploadComplete">
+      <wsdl:input message="uploadComplete" />
+      <wsdl:output message="uploadCompleteResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="updateUnifyCustPwd">
+      <wsdl:input message="updateUnifyCustPwd" />
+      <wsdl:output message="updateUnifyCustPwdResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getFilePath">
+      <wsdl:input message="getFilePath" />
+      <wsdl:output message="getFilePathResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="queryAcception">
+      <wsdl:input message="queryAcception" />
+      <wsdl:output message="queryAcceptionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getOuterReqSeqDetail">
+      <wsdl:input message="getOuterReqSeqDetail" />
+      <wsdl:output message="getOuterReqSeqDetailResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="queryInvAccInfo">
+      <wsdl:input message="queryInvAccInfo" />
+      <wsdl:output message="queryInvAccInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getCustDemoInfo">
+      <wsdl:input message="getCustDemoInfo" />
+      <wsdl:output message="getCustDemoInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addStockHolder">
+      <wsdl:input message="addStockHolder" />
+      <wsdl:output message="addStockHolderResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OlOpenAcctCtrlBinding" type="OlOpenAcctCtrl">
+    <SOAP:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="saveOuterCustPaperScore">
+      <SOAP:operation soapAction="" />
+      <wsdl:input>
+        <SOAP:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <SOAP:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="generateUnifyCustId">
+      <SOAP:operation soapAction="" />
+      <wsdl:input>
+        <SOAP:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <SOAP:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addOuterOpenAccReqData">
+      <SOAP:operation soapAction="" />
+      <wsdl:input>
+        <SOAP:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <SOAP:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uploadComplete">
+      <SOAP:operation soapAction="" />
+      <wsdl:input>
+        <SOAP:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <SOAP:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateUnifyCustPwd">
+      <SOAP:operation soapAction="" />
+      <wsdl:input>
+        <SOAP:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <SOAP:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFilePath">
+      <SOAP:operation soapAction="" />
+      <wsdl:input>
+        <SOAP:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <SOAP:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="queryAcception">
+      <SOAP:operation soapAction="" />
+      <wsdl:input>
+        <SOAP:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <SOAP:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getOuterReqSeqDetail">
+      <SOAP:operation soapAction="" />
+      <wsdl:input>
+        <SOAP:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <SOAP:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="queryInvAccInfo">
+      <SOAP:operation soapAction="" />
+      <wsdl:input>
+        <SOAP:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <SOAP:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCustDemoInfo">
+      <SOAP:operation soapAction="" />
+      <wsdl:input>
+        <SOAP:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <SOAP:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addStockHolder">
+      <SOAP:operation soapAction="" />
+      <wsdl:input>
+        <SOAP:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <SOAP:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OlOpenAcctCtrlService">
+    <wsdl:port name="OlOpenAcctCtrlPort" binding="OlOpenAcctCtrlBinding">
+      <SOAP:address location="http://jboss.95538.cn:8080/MbapService/ws/MbapService_OlOpenAcctCtrl" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

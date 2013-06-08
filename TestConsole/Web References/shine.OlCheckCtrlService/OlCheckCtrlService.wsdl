@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns="http://ctrl.client.mbap.shine.com/" xmlns:SOAP11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:SOAP="http://schemas.xmlsoap.org/wsdl/soap/" name="OlCheckCtrlService" targetNamespace="http://ctrl.client.mbap.shine.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://ctrl.client.mbap.shine.com/" attributeFormDefault="qualified" elementFormDefault="unqualified" targetNamespace="http://ctrl.client.mbap.shine.com/">
+      <xs:element name="getLocalCertCheck">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="arg0" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg2" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="queryShzdjycxHb">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="arg0" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg1" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="addZdQueryReqResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="tns:olReturnMsgDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="submitIdenCheck">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="arg0" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg2" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg3" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg4" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getLocalCertCheckResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="tns:olReturnMsgDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="reqSMSCodeByPhoneResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="tns:olReturnMsgDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="checkFullAccount">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="arg0" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg2" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg3" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg4" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg5" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="checkFullAccountResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="tns:olReturnMsgDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="checkPhoneResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="tns:olReturnMsgDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="submitIdenCheckResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="tns:olReturnMsgDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="reqSMSCodeByPhone">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="arg0" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg1" type="xs:long" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="queryZdQueryRep">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="arg0" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg2" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg3" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg4" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="addShzdjycxWt">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="arg0" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg1" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="addZdQueryReq">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="arg0" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg1" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg2" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg3" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg4" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg5" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="queryShzdjycxHbResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="tns:shzdjyListDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="checkPhone">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="arg0" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="arg1" type="xs:long" />
+            <xs:element minOccurs="0" name="arg2" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="queryZdQueryRepResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="tns:guDongListDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="addShzdjycxWtResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="tns:olReturnMsgDTO" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:complexType name="shzdjyListDTO">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:olReturnDTO">
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="list" type="tns:shzdjycxDTO" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="olReturnDTO" abstract="true">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="msg" type="tns:olReturnMsgDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="shzdjycxDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="clsm" type="xs:string" />
+          <xs:element minOccurs="0" name="fhbz" type="xs:string" />
+          <xs:element minOccurs="0" name="gjdm" type="xs:string" />
+          <xs:element minOccurs="0" name="jshy" type="xs:string" />
+          <xs:element minOccurs="0" name="khhy" type="xs:string" />
+          <xs:element minOccurs="0" name="khrq" type="xs:string" />
+          <xs:element minOccurs="0" name="srcOrderNo" type="xs:string" />
+          <xs:element minOccurs="0" name="tzrmc" type="xs:string" />
+          <xs:element minOccurs="0" name="xwh" type="xs:string" />
+          <xs:element minOccurs="0" name="zjdm" type="xs:string" />
+          <xs:element minOccurs="0" name="zjlb" type="xs:string" />
+          <xs:element minOccurs="0" name="zqzh" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="olReturnMsgDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="errCode" type="xs:string" />
+          <xs:element minOccurs="0" name="errMsg" type="xs:string" />
+          <xs:element minOccurs="0" name="value" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="guDongListDTO">
+        <xs:complexContent mixed="false">
+          <xs:extension base="tns:olReturnDTO">
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="list" type="tns:guDongInfoDTO" />
+            </xs:sequence>
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="guDongInfoDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="certCode" type="xs:string" />
+          <xs:element minOccurs="0" name="certType" type="xs:string" />
+          <xs:element minOccurs="0" name="custName" type="xs:string" />
+          <xs:element minOccurs="0" name="invAcc" type="xs:string" />
+          <xs:element minOccurs="0" name="invStatus" type="xs:string" />
+          <xs:element minOccurs="0" name="mktCode" type="xs:string" />
+          <xs:element minOccurs="0" name="srcOrderNo" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getLocalCertCheck">
+    <wsdl:part name="getLocalCertCheck" element="getLocalCertCheck" />
+  </wsdl:message>
+  <wsdl:message name="queryShzdjycxHb">
+    <wsdl:part name="queryShzdjycxHb" element="queryShzdjycxHb" />
+  </wsdl:message>
+  <wsdl:message name="addZdQueryReqResponse">
+    <wsdl:part name="addZdQueryReqResponse" element="addZdQueryReqResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitIdenCheck">
+    <wsdl:part name="submitIdenCheck" element="submitIdenCheck" />
+  </wsdl:message>
+  <wsdl:message name="getLocalCertCheckResponse">
+    <wsdl:part name="getLocalCertCheckResponse" element="getLocalCertCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="reqSMSCodeByPhoneResponse">
+    <wsdl:part name="reqSMSCodeByPhoneResponse" element="reqSMSCodeByPhoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkFullAccount">
+    <wsdl:part name="checkFullAccount" element="checkFullAccount" />
+  </wsdl:message>
+  <wsdl:message name="checkFullAccountResponse">
+    <wsdl:part name="checkFullAccountResponse" element="checkFullAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkPhoneResponse">
+    <wsdl:part name="checkPhoneResponse" element="checkPhoneResponse" />
+  </wsdl:message>
+  <wsdl:message name="submitIdenCheckResponse">
+    <wsdl:part name="submitIdenCheckResponse" element="submitIdenCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="reqSMSCodeByPhone">
+    <wsdl:part name="reqSMSCodeByPhone" element="reqSMSCodeByPhone" />
+  </wsdl:message>
+  <wsdl:message name="queryZdQueryRep">
+    <wsdl:part name="queryZdQueryRep" element="queryZdQueryRep" />
+  </wsdl:message>
+  <wsdl:message name="addShzdjycxWt">
+    <wsdl:part name="addShzdjycxWt" element="addShzdjycxWt" />
+  </wsdl:message>
+  <wsdl:message name="addZdQueryReq">
+    <wsdl:part name="addZdQueryReq" element="addZdQueryReq" />
+  </wsdl:message>
+  <wsdl:message name="queryShzdjycxHbResponse">
+    <wsdl:part name="queryShzdjycxHbResponse" element="queryShzdjycxHbResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkPhone">
+    <wsdl:part name="checkPhone" element="checkPhone" />
+  </wsdl:message>
+  <wsdl:message name="queryZdQueryRepResponse">
+    <wsdl:part name="queryZdQueryRepResponse" element="queryZdQueryRepResponse" />
+  </wsdl:message>
+  <wsdl:message name="addShzdjycxWtResponse">
+    <wsdl:part name="addShzdjycxWtResponse" element="addShzdjycxWtResponse" />
+  </wsdl:message>
+  <wsdl:portType name="OlCheckCtrl">
+    <wsdl:operation name="getLocalCertCheck">
+      <wsdl:input message="getLocalCertCheck" />
+      <wsdl:output message="getLocalCertCheckResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="submitIdenCheck">
+      <wsdl:input message="submitIdenCheck" />
+      <wsdl:output message="submitIdenCheckResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="reqSMSCodeByPhone">
+      <wsdl:input message="reqSMSCodeByPhone" />
+      <wsdl:output message="reqSMSCodeByPhoneResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="checkPhone">
+      <wsdl:input message="checkPhone" />
+      <wsdl:output message="checkPhoneResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="checkFullAccount">
+      <wsdl:input message="checkFullAccount" />
+      <wsdl:output message="checkFullAccountResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="queryZdQueryRep">
+      <wsdl:input message="queryZdQueryRep" />
+      <wsdl:output message="queryZdQueryRepResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addZdQueryReq">
+      <wsdl:input message="addZdQueryReq" />
+      <wsdl:output message="addZdQueryReqResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addShzdjycxWt">
+      <wsdl:input message="addShzdjycxWt" />
+      <wsdl:output message="addShzdjycxWtResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="queryShzdjycxHb">
+      <wsdl:input message="queryShzdjycxHb" />
+      <wsdl:output message="queryShzdjycxHbResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OlCheckCtrlBinding" type="OlCheckCtrl">
+    <SOAP:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getLocalCertCheck">
+      <SOAP:operation soapAction="" />
+      <wsdl:input>
+        <SOAP:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <SOAP:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="submitIdenCheck">
+      <SOAP:operation soapAction="" />
+      <wsdl:input>
+        <SOAP:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <SOAP:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reqSMSCodeByPhone">
+      <SOAP:operation soapAction="" />
+      <wsdl:input>
+        <SOAP:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <SOAP:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkPhone">
+      <SOAP:operation soapAction="" />
+      <wsdl:input>
+        <SOAP:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <SOAP:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkFullAccount">
+      <SOAP:operation soapAction="" />
+      <wsdl:input>
+        <SOAP:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <SOAP:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="queryZdQueryRep">
+      <SOAP:operation soapAction="" />
+      <wsdl:input>
+        <SOAP:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <SOAP:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addZdQueryReq">
+      <SOAP:operation soapAction="" />
+      <wsdl:input>
+        <SOAP:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <SOAP:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addShzdjycxWt">
+      <SOAP:operation soapAction="" />
+      <wsdl:input>
+        <SOAP:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <SOAP:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="queryShzdjycxHb">
+      <SOAP:operation soapAction="" />
+      <wsdl:input>
+        <SOAP:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <SOAP:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OlCheckCtrlService">
+    <wsdl:port name="OlCheckCtrlPort" binding="OlCheckCtrlBinding">
+      <SOAP:address location="http://jboss.95538.cn:8080/MbapService/ws/MbapService_OlCheckCtrl" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
